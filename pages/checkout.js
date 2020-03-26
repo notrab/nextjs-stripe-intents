@@ -5,7 +5,7 @@ import { Elements } from "@stripe/react-stripe-js";
 
 import CheckoutForm from "../components/CheckoutForm";
 
-const stripePromise = loadStripe("STRIPE_PUBLIC_KEY_HERE");
+const stripePromise = loadStripe("STRIPE_PUBLISHABLE_KEY");
 
 export const getServerSideProps = async ctx => {
   const stripe = new Stripe("STRIPE_SECRET_KEY_HERE");
