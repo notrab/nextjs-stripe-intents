@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@stripe/react-stripe-js": "1.1.0",
-    "@stripe/stripe-js": "1.2.0",
+    "@stripe/stripe-js": "1.3.0",
     "next": "9.3.2",
     "nookies": "2.2.0",
     "react": "16.13.0",
