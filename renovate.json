@@ -1,5 +1,7 @@
 {
-  "extends": [
-    "config:base"
-  ]
+  "automerge": true,
+  "extends": ["config:base", "schedule:weekly"],
+  "major": {
+    "automerge": false
+  }
 }
