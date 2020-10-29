@@ -10,7 +10,7 @@
   "dependencies": {
     "@stripe/react-stripe-js": "1.1.0",
     "@stripe/stripe-js": "1.3.0",
-    "next": "9.3.2",
+    "next": "9.5.5",
     "nookies": "2.2.1",
     "react": "16.13.0",
     "react-dom": "16.13.0",
