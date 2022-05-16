@@ -12,8 +12,8 @@
     "@stripe/stripe-js": "1.29.0",
     "next": "9.3.2",
     "nookies": "2.5.2",
-    "react": "16.13.0",
-    "react-dom": "16.13.0",
+    "react": "16.14.0",
+    "react-dom": "16.14.0",
     "stripe": "8.36.0"
   }
 }
