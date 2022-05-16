@@ -1657,6 +1657,14 @@ cache-loader@4.1.0:
     neo-async "^2.6.1"
     schema-utils "^2.0.0"
 
+call-bind@^1.0.0:
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/call-bind/-/call-bind-1.0.2.tgz"
+  integrity sha512-7O+FbCihrB5WGbFYesctwmTKae6rOiIzmz1icreWJ+0aA7LJfuqhEso2T9ncpcFtzMQtzXf2QGGueWJGTYsqrA==
+  dependencies:
+    function-bind "^1.1.1"
+    get-intrinsic "^1.0.2"
+
 caller-callsite@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/caller-callsite/-/caller-callsite-2.0.0.tgz"
@@ -2771,6 +2779,15 @@ gauge@~2.7.3:
     strip-ansi "^3.0.1"
     wide-align "^1.1.0"
 
+get-intrinsic@^1.0.2:
+  version "1.1.1"
+  resolved "https://registry.npmjs.org/get-intrinsic/-/get-intrinsic-1.1.1.tgz"
+  integrity sha512-kWZrnVM42QCiEA2Ig1bG8zjoIMOgxWwYCEeNdwY6Tv/cOSeGpcoX4pXHfKUxNKVoArnrEr2e9srnAxxGIraS9Q==
+  dependencies:
+    function-bind "^1.1.1"
+    has "^1.0.3"
+    has-symbols "^1.0.1"
+
 get-value@^2.0.3, get-value@^2.0.6:
   version "2.0.6"
   resolved "https://registry.npmjs.org/get-value/-/get-value-2.0.6.tgz"
@@ -2849,7 +2866,7 @@ has-flag@^3.0.0:
   resolved "https://registry.npmjs.org/has-flag/-/has-flag-3.0.0.tgz"
   integrity sha1-tdRU3CGZriJWmfNGfloH87lVuv0=
 
-has-symbols@^1.0.0:
+has-symbols@^1.0.0, has-symbols@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/has-symbols/-/has-symbols-1.0.1.tgz"
   integrity sha512-PLcsoqu++dmEIZB+6totNFKq/7Do+Z0u4oT0zKOJNl3lYK6vGwwu2hjHs+68OEZbTjiUE9bgOABXbP/GvrS0Kg==
@@ -4140,6 +4157,11 @@ object-copy@^0.1.0:
     define-property "^0.2.5"
     kind-of "^3.0.3"
 
+object-inspect@^1.9.0:
+  version "1.12.0"
+  resolved "https://registry.npmjs.org/object-inspect/-/object-inspect-1.12.0.tgz"
+  integrity sha512-Ho2z80bVIvJloH+YzRmpZVQe87+qASmBUKZDWgx9cu+KDrX2ZDH/3tMy+gXbZETVGs2M8YdxObOh7XAtim9Y0g==
+
 object-keys@^1.0.11, object-keys@^1.0.12:
   version "1.1.1"
   resolved "https://registry.npmjs.org/object-keys/-/object-keys-1.1.1.tgz"
@@ -4938,10 +4960,12 @@ punycode@^2.1.0:
   resolved "https://registry.npmjs.org/punycode/-/punycode-2.1.1.tgz"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
-qs@^6.6.0:
-  version "6.9.3"
-  resolved "https://registry.npmjs.org/qs/-/qs-6.9.3.tgz"
-  integrity sha512-EbZYNarm6138UKKq46tdx08Yo/q9ZhFoAXAI1meAFd2GtbRDhbZY2WQSICskT0c5q99aFzLG1D4nvTk9tqfXIw==
+qs@^6.10.3:
+  version "6.10.3"
+  resolved "https://registry.npmjs.org/qs/-/qs-6.10.3.tgz"
+  integrity sha512-wr7M2E0OFRfIfJZjKGieI8lBKb7fRCH4Fv5KNPEs7gJ8jadvotdsS08PzOKR7opXhZ/Xkjtt3WF9g38drmyRqQ==
+  dependencies:
+    side-channel "^1.0.4"
 
 query-string@^4.1.0:
   version "4.3.4"
@@ -5403,6 +5427,15 @@ shell-quote@^1.6.1:
   resolved "https://registry.npmjs.org/shell-quote/-/shell-quote-1.7.2.tgz"
   integrity sha512-mRz/m/JVscCrkMyPqHc/bczi3OQHkLTqXHEFu0zDhK/qfv3UcOA4SVmRCLmos4bhjr9ekVQubj/R7waKapmiQg==
 
+side-channel@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.npmjs.org/side-channel/-/side-channel-1.0.4.tgz"
+  integrity sha512-q5XPytqFEIKHkGdiMIrY10mvLRvnQh42/+GoBlFW3b2LXLE2xxJpZFdm94we0BaoV3RwJyGqg5wS7epxTv0Zvw==
+  dependencies:
+    call-bind "^1.0.0"
+    get-intrinsic "^1.0.2"
+    object-inspect "^1.9.0"
+
 signal-exit@^3.0.0:
   version "3.0.7"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.7.tgz#a9a1767f8af84155114eaabd73f99273c8f59ad9"
@@ -5650,13 +5683,13 @@ strip-json-comments@~2.0.1:
   resolved "https://registry.npmjs.org/strip-json-comments/-/strip-json-comments-2.0.1.tgz"
   integrity sha1-PFMZQukIwml8DsNEhYwobHygpgo=
 
-stripe@8.36.0:
-  version "8.36.0"
-  resolved "https://registry.npmjs.org/stripe/-/stripe-8.36.0.tgz"
-  integrity sha512-ozOZUzSEA7Fc44UeFGHXfudBEzU4GOXJL5NjRLvYx5BdO4FjKKNx6Y1fhb7iLs2F4Z7ChlttjCnY1KsWsrBCew==
+stripe@8.222.0:
+  version "8.222.0"
+  resolved "https://registry.npmjs.org/stripe/-/stripe-8.222.0.tgz"
+  integrity sha512-hrA79fjmN2Eb6K3kxkDzU4ODeVGGjXQsuVaAPSUro6I9MM3X+BvIsVqdphm3BXWfimAGFvUqWtPtHy25mICY1w==
   dependencies:
     "@types/node" ">=8.1.0"
-    qs "^6.6.0"
+    qs "^6.10.3"
 
 style-loader@1.0.0:
   version "1.0.0"
